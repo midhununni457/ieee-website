@@ -69,8 +69,8 @@ export default function AboutSection() {
           PREVIOUS SPONSORS
         </span>
         <div className="flex items-center justify-between w-full">
-          {Logos.map((logo) => (
-            <Image src={logo} alt="logo" />
+          {Logos.map((logo, idx) => (
+            <Image key={idx} src={logo} alt="logo" />
           ))}
         </div>
       </div>
